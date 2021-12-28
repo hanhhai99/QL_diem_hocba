@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA5DEE25-526E-42EF-B754-D3A557FDB4C4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QLdiem_hocba</RootNamespace>
+    <AssemblyName>QLdiem_hocba</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chucnang\Baoloidiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chucnang\Baoloidiem.Designer.cs">
+      <DependentUpon>Baoloidiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chucnang\nhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chucnang\nhap.Designer.cs">
+      <DependentUpon>nhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chucnang\nv_gioithieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chucnang\nv_gioithieu.Designer.cs">
+      <DependentUpon>nv_gioithieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chucnang\Phangiangday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chucnang\Phangiangday.Designer.cs">
+      <DependentUpon>Phangiangday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chucnang\Quanlydiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chucnang\Quanlydiem.Designer.cs">
+      <DependentUpon>Quanlydiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chucnang\Quanlylop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chucnang\Quanlylop.Designer.cs">
+      <DependentUpon>Quanlylop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chucnang\Quanlyto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chucnang\Quanlyto.Designer.cs">
+      <DependentUpon>Quanlyto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chucnang\Themgv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chucnang\Themgv.Designer.cs">
+      <DependentUpon>Themgv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chucnang\Themlop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chucnang\Themlop.Designer.cs">
+      <DependentUpon>Themlop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chucnang\Themmon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chucnang\Themmon.Designer.cs">
+      <DependentUpon>Themmon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chucnang\Themnv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chucnang\Themnv.Designer.cs">
+      <DependentUpon>Themnv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chucnang\Themtk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chucnang\Themtk.Designer.cs">
+      <DependentUpon>Themtk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chucnang\Themto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chucnang\Themto.Designer.cs">
+      <DependentUpon>Themto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Connect.cs" />
+    <Compile Include="Class\Giaovien.cs" />
+    <Compile Include="Class\Nhanvien.cs" />
+    <Compile Include="Giaodien\dangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giaodien\dangnhap.Designer.cs">
+      <DependentUpon>dangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="soyeulylich\Formquanhe_giadinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="soyeulylich\Formquanhe_giadinh.Designer.cs">
+      <DependentUpon>Formquanhe_giadinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="soyeulylich\Formthongtin_canhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="soyeulylich\Formthongtin_canhan.Designer.cs">
+      <DependentUpon>Formthongtin_canhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giaodien\giaodien_hocsinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giaodien\giaodien_hocsinh.Designer.cs">
+      <DependentUpon>giaodien_hocsinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giaodien\giaodien_giaovien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giaodien\giaodien_giaovien.Designer.cs">
+      <DependentUpon>giaodien_giaovien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chucnang\gioithieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chucnang\gioithieu.Designer.cs">
+      <DependentUpon>gioithieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Hocsinh.cs" />
+    <Compile Include="Chucnang\lop_giangday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chucnang\lop_giangday.Designer.cs">
+      <DependentUpon>lop_giangday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giaodien\giaodien_nhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giaodien\giaodien_nhanvien.Designer.cs">
+      <DependentUpon>giaodien_nhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chucnang\nhap_diem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chucnang\nhap_diem.Designer.cs">
+      <DependentUpon>nhap_diem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chucnang\phancongday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chucnang\phancongday.Designer.cs">
+      <DependentUpon>phancongday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Process.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Chucnang\quanlymon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chucnang\quanlymon.Designer.cs">
+      <DependentUpon>quanlymon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chucnang\quanly_tk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chucnang\quanly_tk.Designer.cs">
+      <DependentUpon>quanly_tk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="soyeulylich\soyeulylich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="soyeulylich\soyeulylich.Designer.cs">
+      <DependentUpon>soyeulylich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chucnang\suadiemloi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chucnang\suadiemloi.Designer.cs">
+      <DependentUpon>suadiemloi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chucnang\tim_nguoidung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chucnang\tim_nguoidung.Designer.cs">
+      <DependentUpon>tim_nguoidung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chucnang\xembaocaoloi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chucnang\xembaocaoloi.Designer.cs">
+      <DependentUpon>xembaocaoloi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chucnang\xemdiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chucnang\xemdiem.Designer.cs">
+      <DependentUpon>xemdiem.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Chucnang\Baoloidiem.resx">
+      <DependentUpon>Baoloidiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chucnang\nhap.resx">
+      <DependentUpon>nhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chucnang\nv_gioithieu.resx">
+      <DependentUpon>nv_gioithieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chucnang\Phangiangday.resx">
+      <DependentUpon>Phangiangday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chucnang\Quanlydiem.resx">
+      <DependentUpon>Quanlydiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chucnang\Quanlylop.resx">
+      <DependentUpon>Quanlylop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chucnang\Quanlyto.resx">
+      <DependentUpon>Quanlyto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chucnang\Themgv.resx">
+      <DependentUpon>Themgv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chucnang\Themlop.resx">
+      <DependentUpon>Themlop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chucnang\Themmon.resx">
+      <DependentUpon>Themmon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chucnang\Themnv.resx">
+      <DependentUpon>Themnv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chucnang\Themtk.resx">
+      <DependentUpon>Themtk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chucnang\Themto.resx">
+      <DependentUpon>Themto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giaodien\dangnhap.resx">
+      <DependentUpon>dangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="soyeulylich\Formquanhe_giadinh.resx">
+      <DependentUpon>Formquanhe_giadinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="soyeulylich\Formthongtin_canhan.resx">
+      <DependentUpon>Formthongtin_canhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giaodien\giaodien_hocsinh.resx">
+      <DependentUpon>giaodien_hocsinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giaodien\giaodien_giaovien.resx">
+      <DependentUpon>giaodien_giaovien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giaodien\giaodien_nhanvien.resx">
+      <DependentUpon>giaodien_nhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chucnang\gioithieu.resx">
+      <DependentUpon>gioithieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chucnang\lop_giangday.resx">
+      <DependentUpon>lop_giangday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chucnang\nhap_diem.resx">
+      <DependentUpon>nhap_diem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chucnang\phancongday.resx">
+      <DependentUpon>phancongday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Chucnang\quanlymon.resx">
+      <DependentUpon>quanlymon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chucnang\quanly_tk.resx">
+      <DependentUpon>quanly_tk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="soyeulylich\soyeulylich.resx">
+      <DependentUpon>soyeulylich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chucnang\suadiemloi.resx">
+      <DependentUpon>suadiemloi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chucnang\tim_nguoidung.resx">
+      <DependentUpon>tim_nguoidung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chucnang\xembaocaoloi.resx">
+      <DependentUpon>xembaocaoloi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chucnang\xemdiem.resx">
+      <DependentUpon>xemdiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
