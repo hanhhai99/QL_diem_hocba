@@ -9,7 +9,7 @@ namespace QLdiem_hocba
 {
     class Connect
     {
-        string connStr = "Data Source=LAPTOP-TFK9EVFA;Initial Catalog=QLD;Integrated Security=True";
+        string connStr = "Data Source=sql.nvcd.xyz;Initial Catalog=QLD;Integrated Security=True;User ID=sa;Password=Secret1234;";
         protected SqlConnection conn;
         public void openConnect()
         {
